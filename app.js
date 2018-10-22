@@ -11,7 +11,6 @@
 function fetch(url) {
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", url, false);
-    xhttp.setRequestHeader('x-api-key', '63c049f3-839a-4c78-8b26-1e6ed8e66805');
     xhttp.send();
     return JSON.parse(xhttp.responseText); 
 }
@@ -41,7 +40,7 @@ function getCategories(selectedCategory) {
 function getCats(category) {
     if (!category) return;
     var catPics = document.getElementById('cat-pics');
-    var cats = fetch('https://api.thecatapi.com/v1/images/search?limit=5&category_ids=' + category);
+    var cats = fetch('https://api.thecatapi.com/v1/images/search?&category_ids=' + category);
     if (!cats || cats.length === 0) {
         var p = document.createElement('p');
         p.innerHTML = 'No cats found';
