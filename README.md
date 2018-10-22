@@ -1,6 +1,6 @@
-# instabugs
+# catbugs
 
-Fetches Instagram posts for a given tag and displays them.
+Display cats from the [Cat API](https://thecatapi.com)
 
 Find and fix any bugs.
 
