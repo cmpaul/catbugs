@@ -1,6 +1,6 @@
 # catbugs
 
-Display cats from the [Cat API](https://thecatapi.com)
+Web page to display cats from the [Cat API](https://thecatapi.com)
 
 ## Instructions
 
